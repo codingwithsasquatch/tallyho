@@ -149,8 +149,8 @@ class TallyhoApp:
 
             # draw the object sizes on the image
             #cv2.putText(self.overlay, "{:.3f}in".format(dimA), (int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
-            #cv2.putText(self.overlay, "{:.3f}in".format(dimB), (int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
-            cv2.putText(self.overlay, "{:.4f}ft".format(dimB), (int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
+            cv2.putText(self.overlay, "{:.3f}in".format(dimB), (int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
+            #cv2.putText(self.overlay, "{:.4f}ft".format(dimB), (int(trbrX + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (255, 255, 255), 2)
 
         # source1 = overlay, source2 = frame, destination = frame
         cv2.addWeighted(self.overlay, opacity, self.frame, 1 - opacity, 0, self.frame)
